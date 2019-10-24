@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<link href='~/Content/Fullcalender/core/main.css' rel='stylesheet' />
+<link href='~/Content/Fullcalender/daygrid/main.css' rel='stylesheet' />
+
+<script src='~/Scripts/Fullcalender/core/main.js'></script>
+<script src='~/Scripts/Fullcalender/daygrid/main.js'></script>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            plugins: ['dayGrid']
+        });
+
+        calendar.render();
+    });
+
+</script>
+
+<div id='calendar'></div>
