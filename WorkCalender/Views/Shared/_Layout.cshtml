@@ -1,12 +1,17 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - 我的 ASP.NET 應用程式</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <style>
+        * {
+            font-family: "Microsoft JhengHei","Times New Roman";
+        }
+    </style>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -24,12 +29,15 @@
                     <li>@Html.ActionLink("首頁", "Index", "Home")</li>
                     <li>@Html.ActionLink("關於", "About", "Home")</li>
                     <li>@Html.ActionLink("連絡人", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("行事曆", "Index", "Calender")</li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="container body-content">
-        @RenderBody()
+        <div class="container">
+            @RenderBody()
+        </div>
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - 我的 ASP.NET 應用程式</p>
