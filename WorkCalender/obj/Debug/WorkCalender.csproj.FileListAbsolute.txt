@@ -170,3 +170,4 @@ C:\Users\alex1\Desktop\WorkCalender\WorkCalender\bin\zh-Hant\System.Web.WebPages
 C:\Users\alex1\Desktop\WorkCalender\WorkCalender\obj\Debug\WorkCalender.csproj.CopyComplete
 C:\Users\alex1\Desktop\WorkCalender\WorkCalender\obj\Debug\WorkCalender.dll
 C:\Users\alex1\Desktop\WorkCalender\WorkCalender\obj\Debug\WorkCalender.pdb
+C:\Users\alex1\Desktop\WorkCalender\WorkCalender\obj\Debug\WorkCalender.csprojAssemblyReference.cache
