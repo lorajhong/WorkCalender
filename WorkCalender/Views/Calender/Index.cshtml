@@ -3,20 +3,29 @@
     ViewBag.Title = "Index";
 }
 
-
+<!--
 <link href='~/Content/Fullcalender/core/main.css' rel='stylesheet' />
 <link href='~/Content/Fullcalender/daygrid/main.css' rel='stylesheet' />
 
 <script src='~/Scripts/Fullcalender/core/main.js'></script>
 <script src='~/Scripts/Fullcalender/daygrid/main.js'></script>
-
+-->
+@Scripts.Render("~/bundles/fullcalender");
+@Styles.Render("~/Content/fullcalendercss");
 <script>
 
     document.addEventListener('DOMContentLoaded', function () {
         var calendarEl = document.getElementById('calendar');
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
-            plugins: ['dayGrid'],
+            plugins: ['dayGrid', 'timeGrid', 'list'],
+            defaultView: 'dayGridMonth',
+            defaultDate: new Date(),
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'dayGridMonth,timeGridWeek,timeGridDay'
+            },
         });
 
         calendar.render();
